@@ -4,7 +4,7 @@ import './Cosmetic.css'
 const Cosmetic = (props) => {
     const {name, price,id}= props.cosmetic
     const addToCart= (id) =>{
-      
+            
         console.log('id added',id);}
     const addToCartWithParam = () => addToCart(id);
   
@@ -13,6 +13,7 @@ const Cosmetic = (props) => {
             <h2>Buy this: {name}</h2>
             <p>Only for:  ${price}</p>
             <button onClick={addToCartWithParam}>Add to Cart</button>
+            <button onClick={()=>addToCart(id)}>purchase</button>
 
             
         </div>
